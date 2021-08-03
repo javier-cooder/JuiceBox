@@ -1,0 +1,445 @@
+body{
+	background: #FFEA80;
+	font-size: 62.5%;
+	font-family: 'Varela Round', Helvetica, Arial, serif;
+}
+/* Global Styles*/
+h1{
+
+}
+
+h2{
+}
+
+h5{
+	font-size: 1rem;
+	margin-bottom: 0;
+}
+
+p{
+	font-size: 1rem;
+}
+
+button{
+	font-size: 1rem;
+	color: white;
+	padding: 0.4rem 1.4rem;
+	border: none;
+	background: #FFC34D;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+img{
+	object-fit: cover;
+}
+
+
+
+/* Nav bar */
+.main-head{
+	background: white;
+	color: black;
+}
+/* nuevo */
+.main-head img{
+  height: 48px;
+  width: 48px;
+  margin-right: 10px;
+  
+}
+
+nav.main{
+	min-height: 7vh;
+	display: flex;
+	width: 65%;
+	margin: auto; 
+	align-items: center;
+	padding: 0.5rem;
+}
+
+nav.main ul{
+	display: flex;
+	flex: 1 1 40rem;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+}
+
+#logo{
+	flex: 2 1 40rem;
+}
+
+/* -----*/
+
+a{
+	font-size: .93rem;
+	text-decoration: none;
+	color: black;
+}
+
+.main{
+	background: white;
+	width: 60%;
+	margin: 5% auto;
+	border-radius: 4px;
+	padding-bottom: 0px; 
+}
+
+/* Home */
+.home{
+  height: 600px;
+}
+ .home .titulo{
+  position: absolute;
+  top: 70%;
+  transform: translate(100%, -120%);
+  z-index: 1;
+}
+
+.home  img{
+  width: 100%;
+  top: 92%;
+  position: sticky;
+  
+}
+.home .img1{
+  width: 220px;
+  height: 300px;
+  background-image: url('/media/imagen7.png');
+  background-repeat: no-repeat;
+}
+.home .img2{
+  width: 300px;
+  height: 100px;
+  padding: 25px;
+  margin-left: 25%;
+  background-image: url('/media/img2.png');
+  background-repeat: no-repeat;
+}
+
+
+.home .titulo h1 {
+  color: black;
+  font-size: 3.0rem;
+  font-weight: 700;
+  display: block;
+  line-height: 1;
+}
+
+/* NAVIGATION BAR */
+.second-nav{
+	display: flex;
+	padding: 15px 30px;
+}
+.txt-logout h1{
+	text-align: center;
+}
+.second-nav .feed{
+	flex: 1 1 30px;
+}
+.second-nav .feed:hover{
+	flex: 1 1 30px;
+	color: #FFA64D;
+}
+.second-nav .profile{
+	flex: 1 1 30px;
+}
+.second-nav .profile:hover{
+	flex: 1 1 30px;
+	color: #FFA64D;
+}
+.second-nav .new{
+	flex: 6 1 5rem;
+	text-align: right;
+  color: #FFC34D;
+  font-size: 1.2rem;
+}
+.second-nav .new:hover{
+	color: #FFA64D;
+}
+
+/* Article */
+
+article{
+	width: 93%;
+	margin: auto;
+	padding: 40px 0;
+	border-bottom: 2px solid #ECEEEF;
+}
+
+.username{
+	margin-bottom: .2rem;
+  margin-top: 5px;
+}
+
+.username a{
+	font-size: 1.1rem;
+}
+
+.container-article{
+  display: flex;
+}
+
+.container-article  .pajilla img{
+  width: 25px;
+  height: 25px;
+  border-radius: 0%;
+  margin-right: 0px;
+}
+.container-article .contenido-post{
+  display: ruby;
+}
+
+.container-article img{
+  height: 68px;
+  width: 68px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+article:last-child {
+  border-bottom: 0;
+}
+
+time {
+  font-size: .8rem;
+  opacity: .6;
+  
+}
+
+.post{
+	font-size: .94rem;
+}
+
+/* PROFILE */
+.profile{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.profile img{
+  height: 100px;
+  width: 100px;
+  margin-right: 10px;
+  border-radius: 50%;
+  margin: 20px;
+}
+.profile h2{
+	margin-top: -10px;
+	font-size: 1.3rem;
+}
+
+/* Followers / Following / Post */
+.follow{
+	display: flex;
+	width: 95%;
+	justify-content: space-around;
+	margin: 30px auto;
+	text-align: center;
+	border-bottom: 2px solid #ECEEEF;
+	padding-bottom: 20px;
+}
+
+
+/*Form Elements*/
+form {
+    margin: 0;
+    padding: 40px;
+    font-size: 1rem;    
+}
+
+
+form #id_image{
+  
+
+}
+.bio{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 2px solid #ECEEEF;
+  padding: 0px 35px 25px;
+  text-align: justify;
+}
+
+
+input {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #D3D8DC;
+  outline: 0;
+  background: #fff;
+  padding: 20px 0 4px;
+  margin: 0 0 20px;
+  color: #777B7E;
+}
+input:focus {
+  border-color: #FFC34D;
+  color: #2C3238;
+}
+textarea {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #D3D8DC;
+  outline: 0;
+  background: #fff;
+  padding: 20px 0 4px;
+  margin: 0 0 20px;
+  color: #777B7E;
+}
+
+form #id_bio{
+  
+  height: 60px;
+  
+}
+
+textarea:focus {
+  border-color: #FFC34D;
+  color: #2C3238;
+}
+button#submit {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  background: #FFC34D;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  opacity: .8;
+  transition: .35s linear;
+}
+button#submit:hover {
+  opacity: 1;
+}
+
+.btnEdit a{
+  color: #fff;
+}
+.btnEdit {
+  color: #fff;
+  display: inline-flex;
+  margin: 2%;
+  align-self: end;
+}
+/*Notifications*/
+.notification {
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.9rem;
+}
+.success {
+  background: #43DC7E;
+  color: white;
+}
+.error {
+  background: #AB3444;
+  color: white;
+  margin-bottom: 20px;
+}
+
+
+/*Footer*/
+footer{
+  color: white;
+  text-align: center;
+  font-size: .875em;
+  margin: 40px 0;
+}
+
+footer p {
+  opacity: .8;
+}
+
+footer p a {
+  color: white;
+}
+
+img.profile{
+  height: 80px;
+  width: 80px;
+  margin-right: 10px;
+  margin-left: 30px;
+  border-radius: 50%;
+}
+
+.follow-button{
+  color: white;
+}
+
+/*Media Queries*/
+@media (max-width: 786px) {
+  .main {
+    width: 95%;
+    padding-bottom: 0px;
+  }
+
+  nav.main {
+    width: 95%;
+  }
+  .main-head img{
+    height: 38px;
+    width: 38px;
+    margin-right: 5px;
+  }
+  #logo{
+    font-size: 1rem;
+  }
+  .container-article img{
+    height: 58px;
+    width: 58px;
+    
+  }
+  .username a{
+    font-size: 1.05em;
+  }
+  .second-nav .profile{
+    flex: 1 1 50px;
+  }
+  
+  .second-nav{
+    display: flex;
+    padding: 15px 15px;
+  }
+  .second-nav .new{  
+    font-size: 1.0rem;
+  }
+  .home{
+    height: 600px;
+  }
+  .home .img1 {
+    background-image: url('/media/imagen7.png');
+    width: 85%;
+    height: 300px;
+    padding: 30px;
+    background-repeat: no-repeat;
+  }
+  .home .img2{
+    width: 300px;
+    height: 100px;
+    padding: 25px;
+    margin-left: 0%;
+    background-image: url('/media/img2.png');
+    background-repeat: no-repeat;
+  }
+  .home .titulo{
+    position: absolute;
+    top: 40%;
+    transform: translate(120%, -120%);
+
+  
+  }
+ 
+  .home .titulo h1  {
+    font-size: 1.3rem;
+    display: block;
+    line-height: 1;
+  }
+  
+
+}
+
+

@@ -1,0 +1,35 @@
+{% extends 'social/layout.html' %}
+
+
+{% load crispy_forms_tags %} 
+
+{% block content %}
+  
+<div class="profile">
+<button class="btnEdit" ><a href="{% url 'password_change' %}">Editar contraseña</a></button>
+<img src="{{ user.profile.image.url }}">       
+</div>
+
+
+
+
+
+<form  method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+  {{ user_form }}
+  {{ profile_form }}
+  <style type="">
+    input[type='file'] {
+       color: transparent;
+    }
+</style>
+  <button type="submit" id="submit">Guardar Información</button>
+
+        
+        
+</div>
+
+
+{% endblock content %}
+
+
